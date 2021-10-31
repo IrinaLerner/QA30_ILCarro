@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import models.User;
 import org.testng.Assert;

@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import manager.ApplicationManager;
 import org.testng.annotations.AfterSuite;
