@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
+
     WebDriver wd;
     HelperUser helperUser;
 
@@ -14,6 +15,7 @@ public class ApplicationManager {
         wd.manage().window().maximize();
         wd.navigate().to("https://ilcarro.xyz/search");
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        helperUser =new HelperUser(wd);
 
 
     }
@@ -21,8 +23,8 @@ public class ApplicationManager {
     public void stop(){
         wd.quit();
     }
-
     public HelperUser getHelperUser() {
         return helperUser;
     }
+
 }
