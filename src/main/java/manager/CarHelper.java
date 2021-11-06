@@ -33,7 +33,7 @@ public class CarHelper extends HelperBase{
             type(By.id("seats"),car.getSeats());
             type(By.id("class"), car.getClasS());
             type(By.id("fuelConsumption"), car.getFuelConsumption());
-            type(By.id("serialNumber"),car.getPrice());
+            type(By.id("serialNumber"),car.getCarRegNumber());
             type(By.id("price"),car.getPrice());
             type(By.id("distance"),car.getDistanceIncluded());
             type(By.cssSelector(".feature-input"),car.getTypeFeature());
@@ -60,8 +60,6 @@ public class CarHelper extends HelperBase{
 
     }
 
-
-
     private boolean isCarCreationFormPresent() {
         Boolean isForm = new WebDriverWait(wd, 10)
                 .until(ExpectedConditions.textToBePresentInElement(wd.findElement(By.cssSelector("h2")), "Write some details about your car to rent it out"));
@@ -69,9 +67,20 @@ public class CarHelper extends HelperBase{
 
     }
 
-    public void attachedPhoto() {
-        wd.findElement(By.id("photos"))
-                .sendKeys("C:\\Users\\User\\QA30\\QA30_ILCarro\\auto.jpeg");
+    public void attachedPhoto(String link) {
 
+        wd.findElement(By.id("photos"))
+                .sendKeys(link);
+    }
+    public boolean isCarAdded() {
+        new WebDriverWait(wd,10)
+                .until(ExpectedConditions.visibilityOf(wd.findElement(By.className("dialog-container"))));
+        String text = wd.findElement(By.cssSelector(".dialog-container h1")).getText();
+        return text.contains("Car added");
+    }
+
+    public void submitAddedCar() {
+
+        click(By.xpath("//button[.='Search cars']"));
     }
 }
