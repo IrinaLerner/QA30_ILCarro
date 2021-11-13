@@ -80,7 +80,7 @@ public class AddNewCarTests extends TestBase{
 
     }
     @AfterMethod
-    public void postCondition(){
+   public void postCondition(){
        app.getCar().submitAddedCar();
       app.getHelperUser().logout();
 

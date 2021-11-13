@@ -1,0 +1,6 @@
+1593 [Test worker] INFO  manager.ApplicationManager - Tests starts on Chrome Driver
+3202 [Test worker] INFO  tests.TestBase - Tests Registration Positive starts with >>>
+4330 [Test worker] INFO  manager.ApplicationManager - Tests passed
+21:07:17  INFO  manager.ApplicationManager - Tests starts on Chrome Driver
+21:07:18  INFO  tests.TestBase - Tests Registration Positive starts with >>>
+21:07:19  INFO  manager.ApplicationManager - Tests passed

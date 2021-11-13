@@ -1,0 +1,3 @@
+14:39:13  INFO  manager.ApplicationManager - Tests starts on Chrome Driver
+14:39:15  INFO  tests.TestBase - Tests Registration Positive starts with >>>
+14:39:26  INFO  manager.ApplicationManager - Tests passed

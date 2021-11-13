@@ -43,7 +43,7 @@ public class HelperUser extends HelperBase {
     public void submitForm() {
 
         WebElement submit = wd.findElement(By.cssSelector("[type='submit']"));
-        new WebDriverWait(wd, 10).until(ExpectedConditions.elementToBeClickable(submit));
+        new WebDriverWait(wd, 20).until(ExpectedConditions.elementToBeClickable(submit));
         submit.submit();
         //click(By.cssSelector("[type='submit']"));
     }
@@ -69,7 +69,7 @@ public class HelperUser extends HelperBase {
         fillLoginForm(user);
         submitForm();
         clickOkButton();
-        pause(10000);
+        pause(1000);
 
     }
 
