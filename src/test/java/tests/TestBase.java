@@ -8,6 +8,8 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import java.lang.reflect.Method;
+
 public class TestBase {
 
     static ApplicationManager app = new ApplicationManager();
@@ -24,14 +26,16 @@ public class TestBase {
 
         app.stop();
     }
-   /* @BeforeMethod
-    public void startTest(Method m){
-        logger.info("Start test ---> "+m.getName());
+
+
+   @BeforeMethod
+    public void startLogger(Method method){
+        logger.info("Start test ---> "+method.getName());
     }
     @AfterMethod
-    public void stopTest(Method m){
-        logger.info("The end of test ---> "+m.getName());
+    public void end(Method method){
+        logger.info("************************************");
     }
 
-    */
+
 }
