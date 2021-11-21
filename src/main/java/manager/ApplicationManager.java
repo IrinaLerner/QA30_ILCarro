@@ -15,6 +15,7 @@ public class ApplicationManager {
     EventFiringWebDriver wd;
     HelperUser helperUser;
     CarHelper car;
+    SearchHelper search;
 
     public void init(){
         wd= new EventFiringWebDriver(new ChromeDriver());
@@ -25,6 +26,7 @@ public class ApplicationManager {
         helperUser =new HelperUser(wd);
         car=new CarHelper(wd);
         wd.register(new MyListener());
+        search= new SearchHelper(wd);
 
 
     }
@@ -40,4 +42,9 @@ public class ApplicationManager {
     public CarHelper getCar() {
         return car;
     }
+
+    public SearchHelper Search() {
+        return search;
+    }
 }
+
