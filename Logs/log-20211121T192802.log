@@ -1,0 +1,15 @@
+19:28:03  INFO  manager.ApplicationManager - Tests starts on Chrome Driver
+19:28:05  INFO  tests.TestBase - Start test ---> searchTest
+19:28:05  INFO  manager.MyListener - Start search element by  locator-->By.id: city
+19:28:05  INFO  manager.MyListener - The element with locator -->By.id: citywas found
+19:28:05  INFO  manager.MyListener - Start search element by  locator-->By.cssSelector: div.pac-item
+19:28:06  INFO  manager.MyListener - The element with locator -->By.cssSelector: div.pac-itemwas found
+19:28:06  INFO  manager.MyListener - Start search element by  locator-->By.id: dates
+19:28:06  INFO  manager.MyListener - The element with locator -->By.id: dateswas found
+19:28:06  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //div[.=' 30 ']
+19:28:06  INFO  manager.MyListener - The element with locator -->By.xpath: //div[.=' 30 ']was found
+19:28:06  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //div[.=' 30 ']
+19:28:06  INFO  manager.MyListener - The element with locator -->By.xpath: //div[.=' 30 ']was found
+19:28:07  INFO  manager.MyListener - Start search element by  locator-->By.cssSelector: [type='submit']
+19:28:07  INFO  manager.MyListener - The element with locator -->By.cssSelector: [type='submit']was found
+19:28:07  INFO  tests.TestBase - ************************************

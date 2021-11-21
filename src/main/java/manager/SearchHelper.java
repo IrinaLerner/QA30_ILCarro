@@ -2,6 +2,7 @@ package manager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
 
 import java.time.LocalDate;
 
@@ -53,5 +54,13 @@ public class SearchHelper extends HelperBase{
         type(By.id("city"),city);
         click(By.cssSelector("div.pac-item"));
         pause(500);
+    }
+
+    public boolean isListOfCarsAppeared() {
+        return isElementPresent(By.cssSelector(".cars-container"));
+    }
+
+
+    public void returnToMainPage() {
     }
 }
