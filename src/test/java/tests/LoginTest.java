@@ -21,7 +21,7 @@ public class LoginTest extends TestBase {
         }
     }
 
-    @Test(dataProvider = "login")
+    @Test(dataProvider = "loginModelDto",dataProviderClass = MyDataProvider.class)
     public void loginSuccess() {
         User user = new User().withEmail("nevo@gmail.com").setPassword("Nn12345$");
 
