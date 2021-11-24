@@ -113,4 +113,7 @@ public class HelperUser extends HelperBase {
         js.executeScript("document.querySelector('#terms-of-use').click();");
         js.executeScript("document.querySelector('#terms-of-use').checked=true;");
     }
+
+    public boolean isErrorPasswordDisplayed() {
+    }
 }

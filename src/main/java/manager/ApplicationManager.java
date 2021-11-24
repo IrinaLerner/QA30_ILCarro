@@ -6,6 +6,10 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
@@ -16,12 +20,30 @@ public class ApplicationManager {
     HelperUser helperUser;
     CarHelper car;
     SearchHelper search;
+    String browser;
+    Properties properties;
 
-    public void init(){
+    public ApplicationManager(String browser) {
+        this.browser = browser;
+        properties =new Properties();
+    }
+
+    public void init() throws IOException {
+        String target =System.getProperty("target","config");
+        properties.load(new FileReader(String.format("src/test/resources/%s.properties",target)));
+
+        if (browser.equals(BrowserType.CHROME)) {
+            wd = new EventFiringWebDriver(new ChromeDriver());
+            logger.info("Tests starts on Chrome Driver");
+        }else if (browser.equals(BrowserType.FIREFOX)){
+            wd= new EventFiringWebDriver(new FirefoxDriver());
+            logger.info("Tests starts on FireFox Driver");
+        }
         wd= new EventFiringWebDriver(new ChromeDriver());
         logger.info("Tests starts on Chrome Driver");
         wd.manage().window().maximize();
-        wd.navigate().to("https://ilcarro.xyz/search");
+        wd.navigate().to(properties.getProperty("web.baseURL"));
+        //wd.navigate().to("https://ilcarro.xyz/search");
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         helperUser =new HelperUser(wd);
         car=new CarHelper(wd);
@@ -45,6 +67,13 @@ public class ApplicationManager {
 
     public SearchHelper Search() {
         return search;
+    }
+
+    public String email(){
+        return properties.getProperty("web.email");
+    }
+    public String password(){
+        return properties.getProperty("web.password");
     }
 }
 
