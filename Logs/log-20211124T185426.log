@@ -1,0 +1,7 @@
+18:54:28  INFO  manager.ApplicationManager - Tests starts on Chrome Driver
+18:54:29  INFO  tests.TestBase - Start test ---> searchTestYear
+18:54:29  INFO  manager.MyListener - Start search element by  locator-->By.id: city
+18:54:29  INFO  manager.MyListener - The element with locator -->By.id: citywas found
+18:54:30  INFO  manager.MyListener - Start search element by  locator-->By.cssSelector: div.pac-item
+18:54:30  INFO  manager.MyListener - The element with locator -->By.cssSelector: div.pac-itemwas found
+18:54:35  INFO  tests.TestBase - ************************************
