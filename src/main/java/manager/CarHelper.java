@@ -48,9 +48,6 @@ public class CarHelper extends HelperBase{
        // new Select(wd.findElement(locator)).selectByIndex(2);
         new Select(wd.findElement(locator)).selectByValue(option);
        // new Select(wd.findElement(locator)).selectByVisibleText(" Petrol ");
-
-
-
     }
 
     private void typeLocation(String address) {
@@ -64,7 +61,6 @@ public class CarHelper extends HelperBase{
         Boolean isForm = new WebDriverWait(wd, 10)
                 .until(ExpectedConditions.textToBePresentInElement(wd.findElement(By.cssSelector("h2")), "Write some details about your car to rent it out"));
         return isForm;
-
     }
 
     public void attachedPhoto(String link) {

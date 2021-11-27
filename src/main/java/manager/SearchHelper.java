@@ -67,16 +67,14 @@ public class SearchHelper extends HelperBase{
         for(int i=0;i< diffStart;i++){
             click(By.xpath("//button[@aria-label='Next month']"));
         }
+        String locator = "//div[.=' 25 ']";
+        String locator2 = "//div[.' "+dataFrom[1]+"']";
         String locator3= String.format("//div[.=' %s ']",dataTo[1]);
         click(By.xpath(locator3));
 
         for(int i =0;i< diff;i++){
             click(By.xpath("//button[@aria-label='Next month']"));
         }
-
-        String locator = "//div[.=' 25 ']";
-        String locator2 = "//div[.' "+dataFrom[1]+"']";
-
         String locator4= String.format("//div[.=' %s ']",dataTo[1]);
         click(By.xpath(locator4));
 
@@ -94,5 +92,6 @@ public class SearchHelper extends HelperBase{
 
 
     public void returnToMainPage() {
+        click(By.cssSelector(".logo"));
     }
 }

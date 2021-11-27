@@ -31,6 +31,7 @@ public class User {
     }
 
     public String getLastname() {
+
         return lastname;
     }
 
@@ -40,6 +41,16 @@ public class User {
 
     public String getPassword() {
         return password;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 }
 

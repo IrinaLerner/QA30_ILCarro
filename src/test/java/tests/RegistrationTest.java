@@ -11,20 +11,19 @@ public class RegistrationTest extends TestBase{
 
     @BeforeMethod
     public void precondition() {
-        if (!app.getHelperUser().isLogInPresent()) {
+        if (!app.getHelperUser().isLoginPresent()) {
             app.getHelperUser().logout();
         }
     }
-//perepisat
+
     @Test(dataProvider = "registrationCSV",dataProviderClass = MyDataProvider.class)
-    public void registrationPositiveTest(){
-        int i = (int)((System.currentTimeMillis()/1000)%3600);
-        User user = new User().withName("Lis").withLastname("Snow").withEmail("snow"+i+"@gmail.com").setPassword("Snow12345$");
-        logger.info("Tests Registration Positive starts with >>>");
+    public void registrationSuccessTest(User user) {
+        logger.info(user.toString());
+
         app.getHelperUser().openRegistrationForm();
         app.getHelperUser().fillRegistrationForm(user);
+        app.getHelperUser().checkPolicy();
         app.getHelperUser().submitForm();
-        //click(By.cssSelector(""));
         Assert.assertTrue(app.getHelperUser().isRegistered());
     }
     @Test
@@ -41,7 +40,7 @@ public class RegistrationTest extends TestBase{
         app.getHelperUser().fillRegistrationForm(user);
         app.getHelperUser().checkPolicy();
         Assert.assertTrue(app.getHelperUser().isErrorPasswordDisplayed());
-        Assert.assertFalse(app.getHelperUser().isLoggedSuccess().isYallaButtonActive();
+        Assert.assertFalse(app.getHelperUser().isYallaButtonActive());
     }
     @AfterMethod
     public void postCondition(){

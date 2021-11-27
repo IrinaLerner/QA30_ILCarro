@@ -11,7 +11,7 @@ public class AddNewCarTests extends TestBase{
 
     @BeforeMethod
     public void precondition(){
-        if(app.getHelperUser().isLogInPresent()){
+        if(app.getHelperUser().isLoginPresent()){
             app.getHelperUser().login(new User().withEmail(app.email()).setPassword(app.password()));
         }
 
@@ -51,6 +51,10 @@ public class AddNewCarTests extends TestBase{
     @Test
     public void addNewCarTestPositive2(){
         int i = (int)((System.currentTimeMillis()/1000)%3600);
+        Car car1 = Car.builder()
+                .model("ggg")
+                .about("jhgg").build();
+
         Car car = Car.builder()
                 .address("Tel aviv")
                 .make("BMW")

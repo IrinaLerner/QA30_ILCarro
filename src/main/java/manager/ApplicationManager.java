@@ -2,10 +2,12 @@ package manager;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -39,22 +41,22 @@ public class ApplicationManager {
             wd= new EventFiringWebDriver(new FirefoxDriver());
             logger.info("Tests starts on FireFox Driver");
         }
-        wd= new EventFiringWebDriver(new ChromeDriver());
-        logger.info("Tests starts on Chrome Driver");
+
         wd.manage().window().maximize();
         wd.navigate().to(properties.getProperty("web.baseURL"));
         //wd.navigate().to("https://ilcarro.xyz/search");
+
+        logger.info("Navigate to link ---> " + wd.getCurrentUrl());
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        wd.register(new MyListener());
         helperUser =new HelperUser(wd);
         car=new CarHelper(wd);
-        wd.register(new MyListener());
         search= new SearchHelper(wd);
-
-
     }
 
     public void stop(){
-       wd.quit();
+        logger.info("The browser  has been closed");
+        wd.quit();
     }
     public HelperUser getHelperUser() {
 

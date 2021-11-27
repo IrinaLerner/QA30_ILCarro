@@ -15,15 +15,16 @@ public class LoginTest extends TestBase {
 
     @BeforeMethod
     public void precondition() {
-        if (!app.getHelperUser().isLogInPresent()) {
+        if (!app.getHelperUser().isLoginPresent()) {
             app.getHelperUser().logout();
 
         }
     }
 
     @Test(dataProvider = "loginModelDto",dataProviderClass = MyDataProvider.class)
-    public void loginSuccess() {
-        User user = new User().withEmail("nevo@gmail.com").setPassword("Nn12345$");
+    public void loginSuccess(User user) {
+        //User user = new User().withEmail("nevo@gmail.com").setPassword("Nn12345$");
+        logger.info("With user --> "+user.toString());
 
         app.getHelperUser().openLoginForm();
         // app.getHelperUser().fillLoginForm("nevo@gmail.com","Nn12345$");

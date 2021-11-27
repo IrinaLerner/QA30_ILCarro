@@ -2,28 +2,29 @@ package manager;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.testng.ITestContext;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
+import org.testng.*;
 
-public class NgListener implements ITestListener {
+import java.util.List;
+
+public class NgListener implements ITestListener, ISuiteListener, IReporter, IMethodInterceptor {
     Logger logger = LoggerFactory.getLogger(NgListener.class);
+
     @Override
     public void onTestStart(ITestResult result) {
         ITestListener.super.onTestStart(result);
-        logger.info("Start of test-->"+result.getName());
+        logger.info("Start of test-->" + result.getName());
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
         ITestListener.super.onTestSuccess(result);
-        logger.info("Success test-->"+result.getName());
+        logger.info("Success test-->" + result.getName());
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
         ITestListener.super.onTestFailure(result);
-        logger.info("Test Failure-->"+result.getThrowable().fillInStackTrace());
+        logger.info("Test Failure-->" + result.getThrowable().fillInStackTrace());
     }
 
     @Override
@@ -49,5 +50,11 @@ public class NgListener implements ITestListener {
     @Override
     public void onFinish(ITestContext context) {
         ITestListener.super.onFinish(context);
+    }
+
+    @Override
+    public List<IMethodInstance> intercept(List<IMethodInstance> methods, ITestContext context) {
+
+        return null;
     }
 }

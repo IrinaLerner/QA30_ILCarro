@@ -36,7 +36,8 @@ public class MyDataProvider {
        String line=  reader.readLine();
        while(line !=null){
            String[] split = line.split(",");
-           list.add(new Object[]{new User().withName(split[0])
+           list.add(new Object[]{new User()
+                   .withName(split[0])
                    .withLastname(split[1])
                    .withEmail(split[2])
                    .setPassword(split[3])});
