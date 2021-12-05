@@ -1,0 +1,90 @@
+18:51:31  INFO  manager.ApplicationManager - Tests starts on Chrome Driver
+18:51:33  INFO  manager.ApplicationManager - Navigate to link ---> https://ilcarro.xyz/search
+18:51:33  INFO  tests.TestBase - Start test ---> registrationSuccessTest
+18:51:33  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //a[text()=' Log in ']
+18:51:33  INFO  manager.MyListener - The element with locator -->By.xpath: //a[text()=' Log in ']was found
+18:51:33  INFO  tests.TestBase - User{name='Sonya', lastname='Snow', email='irinar@gmail.com', password='Ww12345$'}
+18:51:33  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //a[text()=' Sign up ']
+18:51:33  INFO  manager.MyListener - The element with locator -->By.xpath: //a[text()=' Sign up ']was found
+18:51:33  INFO  manager.MyListener - Start search element by  locator-->By.id: name
+18:51:33  INFO  manager.MyListener - The element with locator -->By.id: namewas found
+18:51:33  INFO  manager.MyListener - Start search element by  locator-->By.id: lastName
+18:51:33  INFO  manager.MyListener - The element with locator -->By.id: lastNamewas found
+18:51:33  INFO  manager.MyListener - Start search element by  locator-->By.id: email
+18:51:33  INFO  manager.MyListener - The element with locator -->By.id: emailwas found
+18:51:33  INFO  manager.MyListener - Start search element by  locator-->By.id: password
+18:51:33  INFO  manager.MyListener - The element with locator -->By.id: passwordwas found
+18:51:33  INFO  manager.MyListener - Start search element by  locator-->By.id: terms-of-use
+18:51:33  INFO  manager.MyListener - The element with locator -->By.id: terms-of-usewas found
+18:51:33  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //label[@for='terms-of-use']
+18:51:33  INFO  manager.MyListener - The element with locator -->By.xpath: //label[@for='terms-of-use']was found
+18:51:33  INFO  manager.MyListener - We have a throwable --> org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=96.0.4664.45)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8LJJU6I', ip: '10.0.0.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56045}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 538c0b379d0367265eef320133e24ca9
+18:51:34  INFO  manager.MyListener - Screenshot with throwable -->src/test/screenshots/screenshot-3093.png
+18:51:34  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //button[text()='Ok']
+18:51:44  INFO  manager.MyListener - The element with locator -->By.xpath: //button[text()='Ok']was found
+18:51:44  INFO  tests.TestBase - The end of test --->registrationSuccessTest
+18:51:44  INFO  tests.TestBase - Start test ---> registrationSuccessTest
+18:51:44  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //a[text()=' Log in ']
+18:51:44  INFO  manager.MyListener - The element with locator -->By.xpath: //a[text()=' Log in ']was found
+18:51:44  INFO  tests.TestBase - User{name='Sonya', lastname='Snow', email='irinar1@gmail.com', password='Ww12345$'}
+18:51:44  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //a[text()=' Sign up ']
+18:51:44  INFO  manager.MyListener - The element with locator -->By.xpath: //a[text()=' Sign up ']was found
+18:51:44  INFO  manager.MyListener - Start search element by  locator-->By.id: name
+18:51:44  INFO  manager.MyListener - The element with locator -->By.id: namewas found
+18:51:44  INFO  manager.MyListener - Start search element by  locator-->By.id: lastName
+18:51:44  INFO  manager.MyListener - The element with locator -->By.id: lastNamewas found
+18:51:44  INFO  manager.MyListener - Start search element by  locator-->By.id: email
+18:51:44  INFO  manager.MyListener - The element with locator -->By.id: emailwas found
+18:51:44  INFO  manager.MyListener - Start search element by  locator-->By.id: password
+18:51:44  INFO  manager.MyListener - The element with locator -->By.id: passwordwas found
+18:51:44  INFO  manager.MyListener - Start search element by  locator-->By.id: terms-of-use
+18:51:44  INFO  manager.MyListener - The element with locator -->By.id: terms-of-usewas found
+18:51:44  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //label[@for='terms-of-use']
+18:51:44  INFO  manager.MyListener - The element with locator -->By.xpath: //label[@for='terms-of-use']was found
+18:51:44  INFO  manager.MyListener - We have a throwable --> org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=96.0.4664.45)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8LJJU6I', ip: '10.0.0.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56045}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 538c0b379d0367265eef320133e24ca9
+18:51:45  INFO  manager.MyListener - Screenshot with throwable -->src/test/screenshots/screenshot-3104.png
+18:51:45  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //button[text()='Ok']
+18:51:55  INFO  manager.MyListener - The element with locator -->By.xpath: //button[text()='Ok']was found
+18:51:55  INFO  tests.TestBase - The end of test --->registrationSuccessTest
+18:51:55  INFO  tests.TestBase - Start test ---> registrationSuccessTest
+18:51:55  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //a[text()=' Log in ']
+18:51:55  INFO  manager.MyListener - The element with locator -->By.xpath: //a[text()=' Log in ']was found
+18:51:55  INFO  tests.TestBase - User{name='Sonya', lastname='Snow', email='irinar2@gmail.com', password='Ww12345$'}
+18:51:55  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //a[text()=' Sign up ']
+18:51:55  INFO  manager.MyListener - The element with locator -->By.xpath: //a[text()=' Sign up ']was found
+18:51:55  INFO  manager.MyListener - Start search element by  locator-->By.id: name
+18:51:55  INFO  manager.MyListener - The element with locator -->By.id: namewas found
+18:51:55  INFO  manager.MyListener - Start search element by  locator-->By.id: lastName
+18:51:55  INFO  manager.MyListener - The element with locator -->By.id: lastNamewas found
+18:51:55  INFO  manager.MyListener - Start search element by  locator-->By.id: email
+18:51:55  INFO  manager.MyListener - The element with locator -->By.id: emailwas found
+18:51:55  INFO  manager.MyListener - Start search element by  locator-->By.id: password
+18:51:55  INFO  manager.MyListener - The element with locator -->By.id: passwordwas found
+18:51:55  INFO  manager.MyListener - Start search element by  locator-->By.id: terms-of-use
+18:51:55  INFO  manager.MyListener - The element with locator -->By.id: terms-of-usewas found
+18:51:55  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //label[@for='terms-of-use']
+18:51:55  INFO  manager.MyListener - The element with locator -->By.xpath: //label[@for='terms-of-use']was found
+18:51:55  INFO  manager.MyListener - We have a throwable --> org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=96.0.4664.45)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8LJJU6I', ip: '10.0.0.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56045}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 538c0b379d0367265eef320133e24ca9
+18:51:55  INFO  manager.MyListener - Screenshot with throwable -->src/test/screenshots/screenshot-3115.png
+18:51:55  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //button[text()='Ok']
+18:52:06  INFO  manager.MyListener - The element with locator -->By.xpath: //button[text()='Ok']was found
+18:52:06  INFO  tests.TestBase - The end of test --->registrationSuccessTest
+18:52:06  INFO  manager.ApplicationManager - The browser  has been closed

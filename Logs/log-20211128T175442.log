@@ -1,0 +1,64 @@
+17:54:44  INFO  manager.ApplicationManager - Tests starts on Chrome Driver
+17:54:45  INFO  manager.ApplicationManager - Navigate to link ---> https://ilcarro.xyz/search
+17:54:46  INFO  tests.TestBase - Start test ---> registrationPasswordTest
+17:54:46  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //a[text()=' Log in ']
+17:54:46  INFO  manager.MyListener - The element with locator -->By.xpath: //a[text()=' Log in ']was found
+17:54:46  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //a[text()=' Sign up ']
+17:54:46  INFO  manager.MyListener - The element with locator -->By.xpath: //a[text()=' Sign up ']was found
+17:54:46  INFO  manager.MyListener - Start search element by  locator-->By.id: name
+17:54:46  INFO  manager.MyListener - The element with locator -->By.id: namewas found
+17:54:46  INFO  manager.MyListener - Start search element by  locator-->By.id: lastName
+17:54:46  INFO  manager.MyListener - The element with locator -->By.id: lastNamewas found
+17:54:46  INFO  manager.MyListener - Start search element by  locator-->By.id: email
+17:54:46  INFO  manager.MyListener - The element with locator -->By.id: emailwas found
+17:54:46  INFO  manager.MyListener - Start search element by  locator-->By.id: password
+17:54:46  INFO  manager.MyListener - The element with locator -->By.id: passwordwas found
+17:54:46  INFO  manager.MyListener - Start search element by  locator-->By.id: email
+17:54:46  INFO  manager.MyListener - The element with locator -->By.id: emailwas found
+17:54:46  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //*[text()='Password must contain minimum 8 symbols']
+17:54:46  INFO  manager.MyListener - The element with locator -->By.xpath: //*[text()='Password must contain minimum 8 symbols']was found
+17:54:46  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //button[@type='submit']
+17:54:46  INFO  manager.MyListener - The element with locator -->By.xpath: //button[@type='submit']was found
+17:54:46  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //button[text()='Ok']
+17:54:56  INFO  manager.MyListener - The element with locator -->By.xpath: //button[text()='Ok']was found
+17:54:56  INFO  tests.TestBase - The end of test --->registrationPasswordTest
+17:54:56  INFO  tests.TestBase - Start test ---> registrationSuccessTest
+17:54:56  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //a[text()=' Log in ']
+17:54:56  INFO  manager.MyListener - The element with locator -->By.xpath: //a[text()=' Log in ']was found
+17:54:56  INFO  tests.TestBase - User{name='Sonya', lastname='Snow', email='irinar3@gmail.com', password='Ww12345$'}
+17:54:56  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //a[text()=' Sign up ']
+17:54:56  INFO  manager.MyListener - The element with locator -->By.xpath: //a[text()=' Sign up ']was found
+17:54:56  INFO  manager.MyListener - Start search element by  locator-->By.id: name
+17:54:56  INFO  manager.MyListener - The element with locator -->By.id: namewas found
+17:54:57  INFO  manager.MyListener - Start search element by  locator-->By.id: lastName
+17:54:57  INFO  manager.MyListener - The element with locator -->By.id: lastNamewas found
+17:54:57  INFO  manager.MyListener - Start search element by  locator-->By.id: email
+17:54:57  INFO  manager.MyListener - The element with locator -->By.id: emailwas found
+17:54:57  INFO  manager.MyListener - Start search element by  locator-->By.id: password
+17:54:57  INFO  manager.MyListener - The element with locator -->By.id: passwordwas found
+17:54:57  INFO  manager.MyListener - Start search element by  locator-->By.id: email
+17:54:57  INFO  manager.MyListener - The element with locator -->By.id: emailwas found
+17:54:57  INFO  manager.MyListener - Start search element by  locator-->By.cssSelector: [type='submit']
+17:54:57  INFO  manager.MyListener - The element with locator -->By.cssSelector: [type='submit']was found
+17:55:08  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //button[text()='Ok']
+17:55:18  INFO  manager.MyListener - The element with locator -->By.xpath: //button[text()='Ok']was found
+17:55:18  INFO  tests.TestBase - The end of test --->registrationSuccessTest
+17:55:18  INFO  tests.TestBase - Start test ---> registrationSuccessTest
+17:55:18  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //a[text()=' Log in ']
+17:55:18  INFO  manager.MyListener - The element with locator -->By.xpath: //a[text()=' Log in ']was found
+17:55:18  INFO  tests.TestBase - User{name='Sonya', lastname='Snow', email='irinar4@gmail.com', password='Ww12345$'}
+17:55:18  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //a[text()=' Sign up ']
+17:55:18  INFO  manager.MyListener - The element with locator -->By.xpath: //a[text()=' Sign up ']was found
+17:55:18  INFO  manager.MyListener - Start search element by  locator-->By.id: name
+17:55:18  INFO  manager.MyListener - The element with locator -->By.id: namewas found
+17:55:18  INFO  manager.MyListener - Start search element by  locator-->By.id: lastName
+17:55:18  INFO  manager.MyListener - The element with locator -->By.id: lastNamewas found
+17:55:18  INFO  manager.MyListener - Start search element by  locator-->By.id: email
+17:55:18  INFO  manager.MyListener - The element with locator -->By.id: emailwas found
+17:55:18  INFO  manager.MyListener - Start search element by  locator-->By.id: password
+17:55:18  INFO  manager.MyListener - The element with locator -->By.id: passwordwas found
+17:55:18  INFO  manager.MyListener - Start search element by  locator-->By.id: email
+17:55:18  INFO  manager.MyListener - The element with locator -->By.id: emailwas found
+17:55:18  INFO  manager.MyListener - Start search element by  locator-->By.cssSelector: [type='submit']
+17:55:18  INFO  manager.MyListener - The element with locator -->By.cssSelector: [type='submit']was found
+17:55:29  INFO  manager.MyListener - Start search element by  locator-->By.xpath: //button[text()='Ok']

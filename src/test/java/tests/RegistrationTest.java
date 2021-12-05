@@ -42,10 +42,21 @@ public class RegistrationTest extends TestBase{
         Assert.assertTrue(app.getHelperUser().isErrorPasswordDisplayed());
         Assert.assertFalse(app.getHelperUser().isYallaButtonActive());
     }
+
+
+@Test
+public void registrationSuccessTest2(User user) {
+    logger.info(user.toString());
+
+    app.getHelperUser().openRegistrationForm();
+    app.getHelperUser().fillRegistrationForm(user);
+    app.getHelperUser().checkPolicy();
+    app.getHelperUser().submitForm();
+    Assert.assertTrue(app.getHelperUser().isRegistered());
+}
+
     @AfterMethod
     public void postCondition(){
         app.getHelperUser().clickOkButton();
     }
-
-
 }

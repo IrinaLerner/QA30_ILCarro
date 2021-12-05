@@ -2,9 +2,7 @@
 <suite name="reg">
     <test name="reg">
         <classes>
-
-            <class name="tests.AddNewCarTests"/>
-            <class name="tests.LoginTest"/>
+            <class name="tests.RegistrationTest"/>
         </classes>
     </test>
 </suite>

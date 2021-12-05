@@ -1,0 +1,3 @@
+18:03:29  INFO  manager.ApplicationManager - Tests starts on Chrome Driver
+18:03:31  INFO  manager.ApplicationManager - Navigate to link ---> https://ilcarro.xyz/search
+18:03:31  INFO  manager.ApplicationManager - The browser  has been closed

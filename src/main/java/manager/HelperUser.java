@@ -36,6 +36,7 @@ public class HelperUser extends HelperBase{
     public void submitForm() {
         // click(By.cssSelector("[type='submit']"));
         WebElement submit= wd.findElement(By.cssSelector("[type='submit']"));
+       // WebElement submit= wd.findElement(By.xpath("//button[@type='submit']"));
         new WebDriverWait(wd,10)
                 .until(ExpectedConditions.elementToBeClickable(submit));
 
@@ -85,10 +86,10 @@ public class HelperUser extends HelperBase{
     }
 
     public void checkPolicy() {
-        boolean isselected = wd.findElement(By.id("terms-of-use")).isSelected();
-        if(!isselected) {
-            click(By.xpath("//label[@for='terms-of-use']"));
-        }
+//        boolean isselected = wd.findElement(By.id("terms-of-use")).isSelected();
+//        if(!isselected) {
+//            click(By.xpath("//label[@for='terms-of-use']"));
+//        }
         //click(By.id("terms-of-use"));
 
         // click(By.cssSelector("label[for='terms-of-use']")); //===click(By.xpath("//label[contains(text(),'I agree to the')]"));
@@ -97,17 +98,17 @@ public class HelperUser extends HelperBase{
 //        click(By.cssSelector(".checkbox-container"));
 
 //        JavascriptExecutor js= (JavascriptExecutor) wd;
-//        js.executeScript("document.querySelector('#terms-of-use').click();");
+//       js.executeScript("document.querySelector('#terms-of-use').click();");
 //        js.executeScript("document.querySelector('#terms-of-use').checked=true;");
-//        click(By.id("email"));
-//        Actions actions = new Actions(wd);
-//        WebElement container = wd.findElement(By.cssSelector(".checkbox-container"));
-//
-//        Rectangle rect = container.getRect();
-//       // int x= rect.getX() + rect.getWidth()/10;
-//        int x= rect.getX() + 5;
-//        int y = rect.getY()+(rect.getHeight()/4);
-//     actions.moveByOffset(x,y).click().perform();
+//       click(By.id("email"));
+        Actions actions = new Actions(wd);
+        WebElement container = wd.findElement(By.cssSelector(".checkbox-container"));
+
+        Rectangle rect = container.getRect();
+       // int x= rect.getX() + rect.getWidth()/10;
+        int x= rect.getX() + 5;
+        int y = rect.getY()+(rect.getHeight()/4);
+     actions.moveByOffset(x,y).click().perform();
     }
 
 
